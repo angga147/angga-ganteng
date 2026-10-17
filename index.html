@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b10" />
+  <title>Foto Kita Blur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">sedikit blur, banyak cerita</p>
+    <h1 class="title">Foto kita<br><i>blur.</i></h1>
+    <p class="subtitle">✌️ bikin blur + suara · kepalkan tangan juga bisa 🔊</p>
+
+    <div class="frame" id="frame">
+      <img
+        id="photo"
+        src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=85"
+        alt="Dua orang berbagi momen hangat"
+      />
+      <video id="camera" autoplay playsinline muted hidden></video>
+      <div class="shade"></div>
+      <div class="heart">♡</div>
+      <div class="voice-caption" id="voiceCaption" hidden>HIDUP JOKOWI!</div>
+      <div class="hint" id="hint">Nyalakan kamera, lalu angkat ✌️</div>
+    </div>
+
+    <audio id="gestureSound" src="Hidup jokowi  sound meme.mp3" preload="auto"></audio>
+    <audio id="peaceSound" src="FOTO KITA BLUR - SAL PRIADI (mp3cut.net).mp3" preload="auto"></audio>
+
+    <div class="controls">
+      <label class="button" for="upload">Pilih foto</label>
+      <input class="file" id="upload" type="file" accept="image/*" />
+      <button class="button primary" id="cameraButton">Pakai kamera 📷</button>
+      <button class="button" id="capture" disabled>Ambil foto</button>
+      <button class="button" id="share">Bagikan</button>
+    </div>
+
+    <p class="caption">“Muhamad, <span>Rizal.</span>”</p>
+    <p class="foot" id="status" role="status">
+      ✌️ bikin blur + suara · kepalkan tangan juga bisa 🔊.
+    </p>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
